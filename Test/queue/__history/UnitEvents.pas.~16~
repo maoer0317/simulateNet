@@ -1,0 +1,27 @@
+unit UnitEvents;
+
+interface
+
+type
+  NET_EVENTS=(SERV_INI_SOCK, SERV_BIND, SERV_LISTEN, SERV_ACCEPTING,
+      SERV_ACCEPTED, SERV_RECV, SERV_SENDING, SERV_CLOSING, SERV_CLOSED,
+      CLI_INI_SOCK, CLI_CONNECTING, CLI_CONNECTED, CLI_SENDING, CLI_RECV,
+      CLI_CLOSE,
+      FILE_READY, FILE_READ);
+
+  NODE_STATE=(S_NOT_EXIST, S_INI, S_BIND, S_LISTEN, S_CLOSED, S_RECV_READY, S_SEND_READY,
+      C_NOT_EXIST, C_INI, C_CONNECTING, C_CONNECTED, C_SENDING,
+      C_RECV_READY, C_CLOSIG, C_CLOSED, C_FILE_READY, C_READFILE);
+
+  EventRec=record
+    OccurTime:Integer ;
+    Duration:Integer ;
+    Event:NET_EVENTS ;
+    NodeState:NODE_STATE ;
+    NodeNo:Integer ;
+    GraphNodeNo:Integer ;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/04/17 11:07:31.000.409,=C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/04/17 11:11:26.000.654,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.pas=F:\simuateNetIO\UnitMain.pas</Transaction>
+    <Transaction>2013/04/17 11:11:26.000.654,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.dfm=F:\simuateNetIO\UnitMain.dfm</Transaction>
+    <Transaction>2013/04/17 11:11:40.000.299,C:\Users\Administrator\Documents\RAD Studio\Projects\Project1.dproj=F:\simuateNetIO\SimulateNetIO.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

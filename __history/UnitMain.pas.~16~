@@ -1,0 +1,117 @@
+unit UnitMain;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ToolWin, ComCtrls, Menus, ExtCtrls, StdCtrls, ImgList, ActnList;
+
+type
+  TFrmMain = class(TForm)
+    MainMenu1: TMainMenu;
+    TlBar1: TToolBar;
+    pnlTop: TPanel;
+    pnlData: TPanel;
+    pnlDiagram: TPanel;
+    spl1: TSplitter;
+    tmr1: TTimer;
+    pgc1: TPageControl;
+    tsData: TTabSheet;
+    tsCode: TTabSheet;
+    redtCode: TRichEdit;
+    lblData1: TLabel;
+    lblData2: TLabel;
+    N1: TMenuItem;
+    NStart: TMenuItem;
+    NSuspend: TMenuItem;
+    NGoon: TMenuItem;
+    NGo: TMenuItem;
+    NStop: TMenuItem;
+    N7: TMenuItem;
+    NExit: TMenuItem;
+    actList: TActionList;
+    actStart: TAction;
+    actGoon: TAction;
+    actSuspend: TAction;
+    actGo: TAction;
+    actStop: TAction;
+    actExit: TAction;
+    imgList: TImageList;
+    btnStart: TToolButton;
+    btnSuspend: TToolButton;
+    btnGoon: TToolButton;
+    btnGo: TToolButton;
+    btnStop: TToolButton;
+    NProj: TMenuItem;
+    NSelClient: TMenuItem;
+    NSelSerCLi: TMenuItem;
+    procedure actStartExecute(Sender: TObject);
+    procedure actSuspendExecute(Sender: TObject);
+    procedure actGoonExecute(Sender: TObject);
+    procedure actGoExecute(Sender: TObject);
+    procedure actStopExecute(Sender: TObject);
+    procedure actExitExecute(Sender: TObject);
+    procedure NSelClientClick(Sender: TObject);
+    procedure NSelSerCLiClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmMain: TFrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmMain.actExitExecute(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TFrmMain.actGoExecute(Sender: TObject);
+begin
+  //
+end;
+
+procedure TFrmMain.actGoonExecute(Sender: TObject);
+begin
+  //
+end;
+
+procedure TFrmMain.actStartExecute(Sender: TObject);
+begin
+  //
+end;
+
+procedure TFrmMain.actStopExecute(Sender: TObject);
+begin
+  //
+end;
+
+procedure TFrmMain.actSuspendExecute(Sender: TObject);
+begin
+  //
+end;
+
+procedure TFrmMain.FormCreate(Sender: TObject);
+begin
+  Self.NSelClient.Click;
+end;
+
+procedure TFrmMain.NSelClientClick(Sender: TObject);
+begin
+  NSelClient.Checked :=True ;
+  NSelSerCLi.Checked :=False ;
+end;
+
+procedure TFrmMain.NSelSerCLiClick(Sender: TObject);
+begin
+  NSelSerCLi.Checked :=True ;
+  NSelClient.Checked :=False ;
+end;
+
+end.

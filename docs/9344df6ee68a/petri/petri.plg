@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: petri - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/petri.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyProjects\petri\petriDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP102.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/petri.pdb" /debug /machine:I386 /out:"Debug/petri.exe" /pdbtype:sept 
+.\Debug\LinkQueue.obj
+.\Debug\petri.obj
+.\Debug\petriDlg.obj
+.\Debug\recordDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\petri.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP102.tmp"
+<h3>Output Window</h3>
+Compiling...
+petriDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+petri.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
